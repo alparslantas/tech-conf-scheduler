@@ -18,7 +18,6 @@ public class PageController {
 
 	@GetMapping("registration-page")
 	public String getRegistrationPage(Model model) {
-		// List<List<Talk>>
 		model.addAttribute("talk", new Talk());
 		return "registration-page";
 	}
